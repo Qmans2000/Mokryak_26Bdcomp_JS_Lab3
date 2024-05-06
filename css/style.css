@@ -1,0 +1,154 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    width: 40vw;
+    height: 40vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.block {
+    border: 1px solid black;
+  }
+
+  .block1 {
+    width: 100%;
+    height: 25%;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block2 {
+    width: 100%;
+    height: 75%;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+}
+.block3 {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    background-color: rgb(146, 146, 146);
+    display: flex;
+}
+.block4 {
+    width: 75%;
+    height: 100%;
+    background-color: rgb(112, 112, 112);
+    display: flex;
+    flex-direction: column-reverse;
+}
+.block5 {
+    width: 100%;
+    height: 35%;
+    background-color: rgb(126, 126, 126);
+    display: flex;
+}
+.block6 {
+    width: 100%;
+    height: 65%;
+    background-color: rgb(91, 91, 91);
+    display: flex;
+    flex-direction: row;
+}
+.block7 {
+    width: 65%;
+    height: 100%;
+    background-color: rgb(63, 63, 63);
+    display: flex;
+    position: relative;
+}
+.block8 {
+    width: 35%;
+    height: 100%;
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    flex-direction: column;
+}
+.block9 {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(126, 126, 126);
+    display: flex;
+}
+.block10 {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(91, 91, 91);
+    display: flex;
+}
+
+
+.task-button {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    z-index: 1; /* Забезпечує, що кнопка буде найвищим шаром */
+}
+.task-button-1 {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    z-index: 2; /* Забезпечує, що кнопка буде найвищим шаром */
+}
+.task-button-2 {
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    z-index: 3; /* Забезпечує, що кнопка буде найвищим шаром */
+}
+#side1, #side2, #side3{
+    position: absolute;
+    z-index: 1;
+    left: 4px;
+}
+#side1{
+    top: 20px;
+}
+#side2{
+    top: 50px;
+}
+#side3{
+    top: 80px;
+}
+
+#form {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(35px, 2fr));
+    grid-gap: 5px;
+    align-content: center;
+    top: 60px;
+}
+
+#form input {
+    margin-bottom: 1px;
+    width: 100%;
+}
+
+#form button {
+    position: absolute;
+    padding: 4px 8px; /* Збільшуємо внутрішній відступ */
+    font-size: 9px; /* Збільшуємо розмір тексту */
+    z-index: 1;
+    width: max-content; /* Встановлюємо ширину кнопки в залежності від її вмісту */
+    top: 168px;
+    right: -33px;
+}
